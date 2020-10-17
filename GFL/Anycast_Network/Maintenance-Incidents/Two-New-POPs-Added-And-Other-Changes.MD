@@ -12,12 +12,9 @@ Unfortunately, the Atlanta PoP is getting very poor routing at the moment (littl
 > As of right now, Vultr's Atlanta location is the only host I've seen actually route to the Atlanta Anycast PoP we have (I tested this by using Vultr's Atlanta Looking Glass to our Anycast network).<br><br>
 > When I remove all filters from the BIRD config, it does start receiving more traffic. However, as I stated above, I'd prefer only announcing to GTT and NTT. With that said, there were still hosting providers located in Atlanta that wouldn't route to the Atlanta PoP regardless of empty filters.<br><br>
 > As it stands, here is my BIRD config with the current filters:<br><br>
-> ```<br>
-> <stripped for security><br>
-> ```<br><br>
+> <stripped for security><br><br>
 > Here is one hosting provider's Looking Glass in Atlanta not routing to our current PoP:<br><br>
 > http://lg.atl.colocrossing.com/ <br><br>
-> ```<br>
 > traceroute to 92.119.148.4 (92.119.148.4), 30 hops max, 60 byte packets<br>
 > 1  192.168.104.2 (192.168.104.2)  0.678 ms  0.636 ms  0.611 ms<br>
 > 2  192-3-16-129-host.colocrossing.com (192.3.16.129)  1.310 ms  1.963 ms  1.941 ms<br>
@@ -28,11 +25,9 @@ Unfortunately, the Atlanta PoP is getting very poor routing at the moment (littl
 > 7  10.67.0.182 (10.67.0.182)  39.223 ms  38.415 ms  38.368 ms<br>
 > 8  * * *<br>
 > 9  * * *<br>
-> -- Traceroute timed out --<br>
-> ```<br><br>
+> -- Traceroute timed out --<br><br>
 > Here is another:<br><br>
 > https://atl-lg.hostus.us/ <br><br>
-> ```<br>
 > traceroute to 92.119.148.5 (92.119.148.5), 30 hops max, 60 byte packets<br>
 > 1  * * *<br>
 > 2  unassigned.quadranet.com (104.223.91.255)  0.418 ms  0.410 ms  0.430 ms<br>
@@ -46,10 +41,8 @@ Unfortunately, the Atlanta PoP is getting very poor routing at the moment (littl
 > 10  ae-0.choopa.dllstx09.us.bb.gin.ntt.net (128.241.219.54)  61.014 ms  60.734 ms  60.696 ms<br>
 > 11  * * *<br>
 > 12  * * *<br>
-> -- Traceroute timed out --<br>
-> ```<br><br>
+> -- Traceroute timed out --<br><br>
 > Here is one from https://ping.pe/ (55 Marietta/RamNode):<br><br>
-> ```<br>
 > 0.  US 192.184.82.0     Loss%  Snt   Last  Avg   Best  Wrst  StDev AS Name                         PTR<br>
 > 1.     ???              100.0  20    0.0   0.0   0.0   0.0   0.0   -<br>
 > 2.  US 129.250.203.221  0.0%   20    1.1   1.0   0.3   7.0   1.4   2914  US NTT                    xe-0-0-25-1.a01.atlnga05.us.bb<br>
@@ -61,8 +54,7 @@ Unfortunately, the Atlanta PoP is getting very poor routing at the moment (littl
 > 8.  US 128.241.219.54   15.0%  20    21.1  23.2  21.0  40.5  4.9   2914  US NTT                    ae-0.choopa.dllstx09.us.bb.gin<br>
 > 9.     ???              100.0  20    0.0   0.0   0.0   0.0   0.0   -<br>
 > 10.    ???              100.0  20    0.0   0.0   0.0   0.0   0.0   -<br>
-> 11.    92.119.148.5     0.0%   20    21.4  21.5  21.4  23.8  0.5   20473 US CHOOPA                 server5.us.gflclan.com<br>
-> ```<br><br>
+> 11.    92.119.148.5     0.0%   20    21.4  21.5  21.4  23.8  0.5   20473 US CHOOPA                 server5.us.gflclan.com<br><br>
 > Is GTT & NTT direct peers with Vultr in the Atlanta location? If so, can somebody look into this issue with routing? If not, can somebody give me a list of all direct peers in this location specifically that I can use?<br><br>
 > I put in a ticket a couple months ago regarding poor routing and requested a full list of direct peers at each data center Vultr is present in. I was told a list was being compiled, but the ticket was closed after receiving an update stating a list was still being put together. I'd appreciate if we could actually get this list so we can tune each location's BGP communities.<br><br>
 > Thank you for your time.
