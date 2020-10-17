@@ -1,5 +1,6 @@
 # Basic Linux Security 
 **Created on March 3rd, 2019**
+
 Hello,
 
 In this guide, I will be going over how to secure a stock Linux machine. With that said, these are methods I use on Ubuntu/Debian-based systems. Therefore, some commands may need to be altered depending on the Linux distro you’re using.
