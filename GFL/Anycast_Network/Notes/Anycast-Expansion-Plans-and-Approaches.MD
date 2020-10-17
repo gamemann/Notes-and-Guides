@@ -1,4 +1,4 @@
-# Anycast Expansion Plans And Approches
+# Anycast Expansion Plans And Approaches
 **Created on July 19th, 2020**
 
 Hey everyone,
