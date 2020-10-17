@@ -1,6 +1,6 @@
 # GFL's Anycast Network
 ## Overview
-GFL's Anycast network was created in March of 2019 by [Christian Deacon](https://github.com/gamemann) along with [Dreae](https://github.com/Dreae), who made the initial/current packet processing software, [Compressor](https://github.com/Dreae/compressor) and provided guidance on the network infrastructure. We currently operate [AS398129](bgp.he.net/AS398129) and manage `92.119.148.0/24`.
+GFL's Anycast network was created in March of 2019 by [Christian Deacon](https://github.com/gamemann) along with [Dreae](https://github.com/Dreae), who made the initial/current packet processing software, [Compressor](https://github.com/Dreae/compressor) and provided guidance on the network infrastructure. We currently operate [AS398129](https://bgp.he.net/AS398129) and manage `92.119.148.0/24`.
 
 GFL's game servers are behind this network on `92.119.148.0/24` and we also host a few of [HellsGamers](https://hellsgamers.com/) servers.
 
