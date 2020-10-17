@@ -2,4 +2,4 @@
 ## Description
 This repository will hold all my notes and guides I've written in the past. Most of this is being imported from [GFLClan.com](https://GFLClan.com/), a gaming community I own.
 
-These notes and guides belong to [Christian Deacon](https://www.linkedin.com/in/christian-deacon-902042186/).
+These notes and guides belong to [Christian Deacon](https://github.com/gamemann).
