@@ -27,4 +27,4 @@ If you're experiencing performance issues on our Rust servers, this may be cause
 
 Thank you for your time.
 
-**[Original Source](https://gflclan.com/forums/topic/64374-two-network-incidents-from-october-12th/?tab=comments#comment-310847)**
+**[Original Source](https://gflclan.com/forums/topic/54124-read-if-youre-experiencing-lag-recently-on-our-game-servers-high-ping-or-packet-loss/?tab=comments#comment-248083)**
