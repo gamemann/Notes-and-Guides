@@ -73,6 +73,7 @@ Thank you for reading!
 
 ## Update
 **Updated on August 23rd, 2020**
+
 I just wanted to provide an update on this. I was told that we should get the same performance using the DPDK [KNI](https://doc.dpdk.org/guides/prog_guide/kernel_nic_interface.html) library compared to using the DPDK without it when processing packets with the DPDK application (e.g. packets we truly care about). However, packets that we decide to send down the network stack (e.g. packets we don't care to filter/forward) will suffer a slight performance impact which makes sense because we're intercepting it with the DPDK application and sending it down its way through the network stack.
 
 This was more so what I was hoping for if we used the DPDK KNI library. Truthfully, traffic that we'll be sending down the network stack will more than likely be traffic to the POP itself (SSH, package updates, BGP, and so on). Having a slight performance degrade on this specific traffic wouldn't mean much since we don't truly care to filter that as of right now. We will still be dropping any unneeded/malicious traffic using the DPDK application itself.
@@ -85,6 +86,7 @@ Honestly, I think we're going to use XDP to drop packets still. I say this becau
 
 ## Another Update
 **Updated on August 25th, 2020**
+
 I just wanted to provide another update. I still need to talk to Dreae about this to make sure he agrees.
 
 As stated in my last post, I believe it's best to use XDP to drop malicious traffic instead of the DPDK for Bifrost. The reason I believe this is because using the DPDK would be a lot more complicated and honestly, we don't need the 5 - 10% performance increase if we're planning to use BGP Flowspec to push policies to our upstreams to have them mitigate certain types of attacks. XDP is still a great solution for (D)DoS mitigation regardless and since our POPs will have either one or ten gbps NIC speeds max, there is no need to use the DPDK in this case over XDP unless if we already had programming experience with the DPDK, of course. I still plan on learning the DPDK regardless because I'd like to use it for some personal projects I plan to work on in the future and perhaps I could make a Bifrost module that would utilize the DPDK.
