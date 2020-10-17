@@ -37,7 +37,7 @@ Thank you to the users who gave me results as well! It really helped narrow down
 
 Update from our PoP hosting provider:
 
-> Hello Christian,
+> Hello Christian,<br><br>
 > Forgive me for the delay. I am looking into this right now. I will update you as soon as possible.
 
 There are now three ISPs involved here (one in Europe), so it isn't one ISP in question. I have also emailed [Hurricane Electric](https://he.net/) as I found they cannot route to the network as well via their Looking Glass [here](http://lg.he.net/).
@@ -63,9 +63,9 @@ Thanks.
 
 Received an update from Hurricane Electric:
 
-> Hello, Christian,
-> Earlier this year, a number of major networks began using strict IRR filtering for their route tables. For consistency and security, we followed suit. I see you don't have an IRR object set up for your ASN. Here's ARIN's quick start guide to IRR:
-> https://www.arin.net/resources/manage/irr/quickstart/
+> Hello, Christian,<br><br>
+> Earlier this year, a number of major networks began using strict IRR filtering for their route tables. For consistency and security, we followed suit. I see you don't have an IRR object set up for your ASN. Here's ARIN's quick start guide to IRR:<br><br>
+> https://www.arin.net/resources/manage/irr/quickstart/ <br><br>
 > Please let us know if you have any additional questions.
 
 I was not aware an IRR was required for some major ISPs. I have submitted an IRR request to ARIN and waiting for it to be approved.
@@ -254,7 +254,7 @@ Thank you for your patience.
 
 Another update, I just received this from our IPv4 block provider:
 
-> Hi Christian,
+> Hi Christian,<br><br>
 > thank you for letting me know - I have updated the ROA record for 92.119.148.0/24 to AS398129.
 
 It looks like they just changed the existing ROA record to point towards our ASN from their end. If this is the case, we probably won't even need to proceed with a ROA signing with ARIN.
