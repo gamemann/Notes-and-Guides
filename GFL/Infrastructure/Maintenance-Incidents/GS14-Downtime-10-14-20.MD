@@ -19,9 +19,9 @@ What's not yet clear is why the machine didn't go down after the panel update la
 
 With that said, we're going to be looking into purchasing our own KVMs for GS14 along with our future game server machines with GSK. This is just so we have our own dedicated KVMs we can access at any time and don't have to rely on GSK manually attaching a KVM (which can be used by other clients which is why it took longer than usual this time).
 
-I understand this post is more technical, but figured I'd give this information for those interested and who knows, maybe if I'm not here, this'll help others like @Aurora with what to look at and so on in the case this happens again.
+I understand this post is more technical, but figured I'd give this information for those interested and who knows, maybe if I'm not here, this'll help others like Aurora with what to look at and so on in the case this happens again.
 
-I also wanted to say thank you to @Aurora for looking into this and contacting GSK while I was at my GP appointment :) This would have taken longer if she hadn't started looking into it.
+I also wanted to say thank you to Aurora for looking into this and contacting GSK while I was at my GP appointment :) This would have taken longer if she hadn't started looking into it.
 
 I apologize for inconvenience and thank you for your patience regarding this. If you have any questions, please feel free to reply!
 
